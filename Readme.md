@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [kostya Lysenko](https://up.htmlacademy.ru/htmlcss/33/user/586823).
-* Наставник: `Неизвестно`.
+* Наставник: [Данила Прокопенко](https://htmlacademy.ru/profile/id324297).
 
 ---
 
