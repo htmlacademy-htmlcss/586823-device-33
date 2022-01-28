@@ -7,43 +7,42 @@
 </head>
   <body>
     <header class="page-header">
-        <nav class="navigation">
-            <a href="index-html">
-               <img class="header-logo" src="" alt="логотип device">
-            </a>
-          
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a href="#" class="navigation-link"> 
-                <span class="visually-hidden">Поиск</span>
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a href="#" class="navigation-link">Войти</a>
-            </li> 
-            <li class="navigation-item">
-              <a href="#" class="navigation-link">Сравнить</a>
-            </li> 
-            <li class="navigation-item">
-              <a href="#" class="navigation-link">Корзина</a>
-            </li> 
-          </ul>
-  
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a href="catalog.html" class="navigation-link">Каталог товаров</a>
-            </li>
-            <li class="navigation-item">
-              <a href="#" class="navigation-link">Доставка</a>
-            </li> 
-            <li class="navigation-item">
-              <a href="#" class="navigation-link">Гарантия</a>
-            </li> 
-            <li class="navigation-item">
-              <a href="#" class="navigation-link">Контакты</a>
-            </li> 
-          </ul>
-        </nav>
+      <nav class="navigation">
+
+        <img class="header-logo" src="" alt="логотип device">
+
+        <form action="https://echo.htmlacademy.ru/." method="post">
+          <input type="search" placeholder="Текст поиска">
+          <button type="submit">Найти</button>
+        </form>
+
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">Войти</a>
+          </li> 
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">Сравнить</a>
+          </li> 
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">Корзина</a>
+          </li> 
+        </ul>
+
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="catalog.html" class="navigation-link">Каталог товаров</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">Доставка</a>
+          </li> 
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">Гарантия</a>
+          </li> 
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">Контакты</a>
+          </li> 
+        </ul>
+      </nav>
       </header>
 
       <main class="main-catalog">
@@ -52,8 +51,8 @@
 
             <div class="bread-crumbs">
                 <a href="index.html" class="bread-crumbs-link">Главная</a>
-                <a href="catalog.html" class="bread-crumbs-link">Каталог товаров</a>
-                <a href="#" class="bread-crumbs-link">Моноподы для селфи</a>
+                <a href="#" class="bread-crumbs-link">Каталог товаров</a>
+                <span>Моноподы для селфи</span>
             </div>
         </section>
 
@@ -61,50 +60,57 @@
             <h2 class="filter-title">фильтр:</h2>
 
             <form action="https://echo.htmlacademy.ru/" method="post" class="filter-form">
-                <div class="filter-form-color">
-                    <legend class="filter-form-color-title">Цвет</legend>
+              <div class="filter-form-price">
+                <legend class="filter-form-price-title">Стоимость</legend>
+
+                <input class="filter-form-price-input" type="number" placeholder="от 0" name="min-price">
+                <input class="filter-form-price-input" type="number" placeholder="до 5000" name="max-price">
+              </div>
+
+              <div class="filter-form-color">
+                <legend class="filter-form-color-title">Цвет</legend>
                     
-                    <input class="filter-form-color-checkbox" type="checkbox" name="color" checked>
-                    <label>Черный</label>
+                <input class="filter-form-color-checkbox" type="checkbox" name="color" value="black" checked>
+                <label>Черный</label>
 
-                    <input class="filter-form-color-checkbox" type="checkbox" name="color" checked>
-                    <label>Белый</label>
+                <input class="filter-form-color-checkbox" type="checkbox" name="color" value="white" checked>
+                <label>Белый</label>
 
-                    <input class="filter-form-color-checkbox" type="checkbox" name="color">
-                    <label>Синий</label>
+                <input class="filter-form-color-checkbox" type="checkbox" name="color" value="blue">
+                <label>Синий</label>
 
-                    <input class="filter-form-color-checkbox" type="checkbox" name="color">
-                    <label>Красный</label>
+                <input class="filter-form-color-checkbox" type="checkbox" name="color" value="red">
+                <label>Красный</label>
 
-                    <input class="filter-form-color-checkbox" type="checkbox" name="color">
-                    <label>Розовый</label>
-                </div>
+                <input class="filter-form-color-checkbox" type="checkbox" name="color" value="pink">
+                <label>Розовый</label>
+              </div>
                 
-                <div class="filter-form-bluetooth">
-                    <legend>Bluetooth</legend>
+              <div class="filter-form-bluetooth">
+                <legend class="filter-form-bluetooth-title">Bluetooth</legend>
 
-                    <input class="filter-form-bluetooth-radio" type="radio" name="is-bluetooth" checked>
-                    <label>Есть</label>
+                <input class="filter-form-bluetooth-radio" type="radio" name="bluetooth" value="yes" checked>
+                <label>Есть</label>
 
-                    <input class="filter-form-bluetooth-radio" type="radio" name="is-bluetooth">
-                    <label>Нет</label>
-                </div>
+                <input class="filter-form-bluetooth-radio" type="radio" name="bluetooth" value="no">
+                <label>Нет</label>
+              </div>
 
-                <button type="submit">Показать</button>
+              <button type="submit">Показать</button>
             </form>
         </section>
 
         <section class="product">
             <h2>сортировка:</h2>
             <div class="sort">
-                <form class="sort-form">
-                    <select class="sort-list">
-                        <option class="sort-item">Популярные</option>
-                    </select>
-                </form>
+              <ul class="sort-list">
+                <li class="sort-item">
+                  <a href="#" class="sort-link">Популярные</a>
+                </li>
+              </ul>
 
-                <button class="sort-top"><span class="visually-hidden">Сортировка по возрастанию</span></button>
-                <button class="sort-down"><span class="visually-hidden">Сортировка по убиванию</span></button>
+                <button type="button" class="sort-top"><span class="visually-hidden">Сортировка по возрастанию</span></button>
+                <button type="button" class="sort-down"><span class="visually-hidden">Сортировка по убиванию</span></button>
             </div>
 
             <ul class="product-list">
@@ -135,8 +141,16 @@
 
             <a class="product-more" href="#">Загрузить ещё</a>
 
-            <button class="product-back">Назад</button>
-            <button class="product-forward">Вперёд</button>
+            <a href="#" class="product-back">Назад</a>
+            <a href="#" class="product-forward">Вперёд</a>
+
+            <div class="product-pagination">
+              <a href="#" class="product-page">1</a>
+              <a href="#" class="product-page">2</a>
+              <a href="#" class="product-page">3</a>
+              <a href="#" class="product-page">...</a>
+              <a href="#" class="product-page">15</a>
+            </div>
         </section>
       </main>
 
