@@ -7,8 +7,10 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-
-        <img class="header-logo" src="" alt="логотип device">
+        <a href="index.html" class="header-logo-link">
+          <img class="header-logo" src="images/header/logo.svg" width="145" height="36" alt="логотип device">
+        </a>
+        
 
         <form action="https://echo.htmlacademy.ru/." method="post">
           <input type="search" placeholder="Текст поиска">
@@ -102,37 +104,39 @@
         <section class="product">
             <h2>сортировка:</h2>
             <div class="sort">
-              <ul class="sort-list">
-                <li class="sort-item">
-                  <a href="#" class="sort-link">Популярные</a>
-                </li>
-              </ul>
-
-                <button type="button" class="sort-top"><span class="visually-hidden">Сортировка по возрастанию</span></button>
-                <button type="button" class="sort-down"><span class="visually-hidden">Сортировка по убиванию</span></button>
+              <div>
+                <ul class="sort-list">
+                  <li class="sort-item">
+                    <a href="#" class="sort-link">Популярные</a>
+                  </li>
+                </ul>
+              </div>
+              
+              <a class="sort-up" href="#"><span class="visually-hidden">Сортировка по возрастанию</span></a>
+              <a class="sort-down" href="#"><span class="visually-hidden">Сортировка по убиванию</span></a>
             </div>
 
             <ul class="product-list">
                 <li class="product-item">
-                    <img class="product-img" src="">
+                    <img class="product-img" src="images/catalog/product-2.jpg" width="360" height="380">
                     <h3 class="product-title">Любительская селфи-палка</h3>
                     <p class="product-price">500 ₽</p>
                 </li>
 
                 <li class="product-item">
-                    <img class="product-img" src="">
+                    <img class="product-img" src="images/catalog/product-2-1.jpg" width="360" height="380">
                     <h3 class="product-title">Профессиональная селфи-палка</h3>
                     <p class="product-price">500 ₽</p>
                 </li>
 
                 <li class="product-item">
-                    <img class="product-img" src="">
+                    <img class="product-img" src="images/catalog/product-2-2.jpg" width="360" height="380">
                     <h3 class="product-title">Непотопляемая селфи-палка</h3>
                     <p class="product-price">500 ₽</p>
                 </li>
 
                 <li class="product-item">
-                    <img class="product-img" src="">
+                    <img class="product-img" src="images/catalog/product-2-3.jpg" width="360" height="380">
                     <h3 class="product-title">Селфи-палка «Следуй за мной»</h3>
                     <p class="product-price">500 ₽</p>
                 </li>
@@ -144,17 +148,17 @@
             <a href="#" class="product-forward">Вперёд</a>
 
             <div class="product-pagination">
-              <a href="#" class="product-page">1</a>
+              <span class="product-page">1</span>
               <a href="#" class="product-page">2</a>
               <a href="#" class="product-page">3</a>
-              <a href="#" class="product-page">...</a>
+              <span class="product-page">...</span>
               <a href="#" class="product-page">15</a>
             </div>
         </section>
       </main>
 
       <footer>
-        <img class="footer-logo" src="" alt="логотип">
+        <img class="footer-logo" src="images/footer/logo.svg" width="145" height="36" alt="логотип">
         <a class="footer-address" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
   
         <nav class="footer-navigation">
