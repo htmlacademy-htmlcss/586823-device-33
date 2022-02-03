@@ -37,12 +37,21 @@
 body{
     font-family: "raleway";
     font-weight: 800;
-    font-style: normal;
     color: black;
     font-size: 18px;
-    line-height: 24px;
-
+    line-height: 30px;
     background-color: white;
+}
+
+.index-text{
+    font-family: "rubik";
+    font-style: normal;
+    font-weight: normal;
+    color: #444444;
+}
+
+.visually-hidden{
+    visibility: hidden;
 }
 
 .page-header{
@@ -67,7 +76,6 @@ body{
 .navigation-user{
     list-style: none;
     font-size: 18px;
-    line-height: 30px;
 }
 
 .navigation-list{
@@ -77,6 +85,7 @@ body{
     font-weight: 800;
     font-size: 18px;
     line-height: 21px;
+    letter-spacing: 0.2em;
 }
 
 .background-number{
@@ -85,45 +94,47 @@ body{
     font-style: normal;
     font-weight: bold;
     font-size: 180px;
-    line-height: 30px;
+    line-height: 180px;
 }
 
-.slide-title{
+.slide-title, .delivery-title, .catalog-title, .about-us_contact h2, .mailings-title{
     font-size: 50px;
     line-height: 50px;
-}
-
-.slide-discription{
-    font-family: "rubik";
-    font-style: normal;
-    font-weight: normal;
-    line-height: 30px;
-    color: #444444;
+    font-weight: 800;
 }
 
 .slider-details{
     line-height: 21px;
     text-transform: uppercase;
     text-decoration: none;
-
+    letter-spacing: 0.2em;
     color: #000000;
+    background: #FFE17F;
 }
 .slider-info{
     font-family: "rubik";
     font-style: normal;
     font-weight: normal;
-    line-height: 30px;
 }
 .slider-info-title{
     font-size: 36px;
 }
 
-.slider-info-title{
+.slider-pagination{
+    list-style: none;
+}
+
+.slider-info-discription{
     font-size: 16px;
+    color: #444444;
 }
 
 .colaction ul{
     list-style: none;
+}
+
+.colaction-discription{
+    line-height: 24;
 }
 
 .info ul{
@@ -134,36 +145,22 @@ body{
     text-decoration: none;
     color: black;
     line-height: 21px;
+    letter-spacing: 0.2em;
+    background: #FFE17F;
 }
 
 .info .opened{
-    color: yellow;
-}
-
-.delivery-title{
-    font-size: 50px;
-    line-height: 50px;
-}
-
-.dilivery-text{
-    font-family: "rubik";
-    line-height: 30px;
-    font-weight: normal;
-    color: #444444;
+    color: #FFE17F;
+    background: #000000;
 }
 
 .delivery-rare-product-text{
     font-size: 20px;
     line-height: 23px;
     text-transform: uppercase;
+    letter-spacing: 0.2em;
 }
 
-.about-us_contact p{
-    font-family: "rubik";
-    font-weight: normal;
-    line-height: 30px;
-    color: #444444;
-}
 .about-us_contact a{
     font-style: normal;
     line-height: 21px;
@@ -171,29 +168,27 @@ body{
     color: black;
 }
 
-.about-us_contact h2{
-    font-size: 50px;
-    line-height: 50px;
+.about-us-link, .contact-link{
+    background: #FFE17F;
+    letter-spacing: 0.2em;
 }
 
 .about-us-list{
     color: #FFC700;
-    font-family: "rubik";
-    font-weight: bold;
 }
 
 .about-us-item{
     line-height: 20px;
+    font-family: "rubik";
+    font-weight: bold;
 }
 
 .contact .contact-shop-name{
     font-weight: bold;
     font-size: 24px;
-    line-height: 30px;
 }
 
 .contact-info{
-    line-height: 30px;
     font-family: "rubik";
     font-weight: normal;
     color: #444444;
@@ -211,20 +206,7 @@ body{
 .contact .contact-time-title{
     font-weight: bold;
     font-size: 24px;
-    line-height: 30px;
-}
-
-.mailings-title{
-    font-size: 50px;
-    line-height: 50px;
-}
-
-.mailings-discription{
-    font-family: "rubik";
-    font-style: normal;
-    font-weight: normal;
-    line-height: 30px;
-    color: #444444;
+    font-weight: 800;
 }
 
 .mailings-form-input{
@@ -232,7 +214,6 @@ body{
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 30px;
 }
 
 .mailings-form-subscribe{
@@ -244,7 +225,6 @@ body{
     font-family: "rubik";
     font-style: normal;
     font-weight: normal;
-    line-height: 30px;
     color: #444444;
 }
 
@@ -272,6 +252,7 @@ body{
 .footer-navigation-item{
     line-height: 21px;
     text-transform: uppercase;
+    letter-spacing: 0.2em;
 }
 
 .page-footer .footer-tel{
@@ -286,11 +267,6 @@ body{
 
 .footer-media-navigation-list{
     list-style: none;
-}
-
-.catalog-title{
-    font-size: 50px;
-    line-height: 50px;
 }
 
 .bread-crumbs-link, .bread-crumbs-span{
@@ -308,6 +284,8 @@ body{
     font-size: 16px;
     line-height: 19px;
     text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 800;
 }
 
 .filter-form{
@@ -320,6 +298,7 @@ body{
     font-weight: bold;
     font-size: 18px;
     line-height: 20px;
+    letter-spacing: -0.02em;
 }
 
 .filter-form label{
@@ -332,12 +311,16 @@ body{
     font-size: 18px;
     line-height: 21px;
     text-transform: uppercase;
+    letter-spacing: 0.2em;
+    background: #FFE17F;
 }
 
 .products-title{
     font-size: 16px;
     line-height: 19px;
     text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 800;
 }
 .sort-list{
     list-style: none;
@@ -350,7 +333,6 @@ body{
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
-    line-height: 30px;
 }
 
 .product-list{
@@ -382,6 +364,7 @@ body{
     text-transform: uppercase;
     color: black;
     text-decoration: none;
+    letter-spacing: 0.2em;
 }
 
 .product-back, .product-forward{
@@ -400,4 +383,5 @@ body{
     line-height: 20px;
     color: #444444; 
     text-decoration: none;
+    opacity: 0.3;
 }
