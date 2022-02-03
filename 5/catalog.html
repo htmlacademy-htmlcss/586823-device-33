@@ -65,14 +65,14 @@
             <h2 class="filter-title">фильтр:</h2>
 
             <form action="https://echo.htmlacademy.ru/" method="post" class="filter-form">
-              <div class="filter-form-price">
+              <fieldset class="filter-form-price">
                 <legend class="filter-form-price-title">Стоимость</legend>
 
                 <input class="filter-form-price-input" type="number" placeholder="от 0" name="min-price">
                 <input class="filter-form-price-input" type="number" placeholder="до 5000" name="max-price">
-              </div>
+              </fieldset>
 
-              <div class="filter-form-color">
+              <fieldset class="filter-form-color">
                 <legend class="filter-form-color-title">Цвет</legend>
                     
                 <input class="filter-form-color-checkbox" type="checkbox" name="color" value="black" checked>
@@ -89,9 +89,9 @@
 
                 <input class="filter-form-color-checkbox" type="checkbox" name="color" value="pink">
                 <label>Розовый</label>
-              </div>
+              </fieldset>
                 
-              <div class="filter-form-bluetooth">
+              <fieldset class="filter-form-bluetooth">
                 <legend class="filter-form-bluetooth-title">Bluetooth</legend>
 
                 <input class="filter-form-bluetooth-radio" type="radio" name="bluetooth" value="yes" checked>
@@ -99,7 +99,7 @@
 
                 <input class="filter-form-bluetooth-radio" type="radio" name="bluetooth" value="no">
                 <label>Нет</label>
-              </div>
+              </fieldset>
 
               <button type="submit">Показать</button>
             </form>
