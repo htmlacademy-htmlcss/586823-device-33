@@ -2,6 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+
+    <link rel="stylesheet" href="styles/style.css">
+
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
@@ -12,12 +15,12 @@
         </a>
         
 
-        <form action="https://echo.htmlacademy.ru/." method="post">
+        <form class="header-seacrh-form" action="https://echo.htmlacademy.ru/." method="post">
           <input type="search" placeholder="Текст поиска">
           <button type="submit">Найти</button>
         </form>
 
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-user">
           <li class="navigation-item">
             <a href="#" class="navigation-link">Войти</a>
           </li> 
@@ -48,12 +51,12 @@
 
       <main class="main-catalog">
         <section>
-            <h1>Моноподы для селфи</h1>
+            <h1 class="catalog-title">Моноподы для селфи</h1>
 
             <div class="bread-crumbs">
                 <a href="index.html" class="bread-crumbs-link">Главная</a>
                 <a href="#" class="bread-crumbs-link">Каталог товаров</a>
-                <span>Моноподы для селфи</span>
+                <span class="bread-crumbs-span">Моноподы для селфи</span>
             </div>
         </section>
 
@@ -61,14 +64,14 @@
             <h2 class="filter-title">фильтр:</h2>
 
             <form action="https://echo.htmlacademy.ru/" method="post" class="filter-form">
-              <div class="filter-form-price">
+              <fieldset class="filter-form-price">
                 <legend class="filter-form-price-title">Стоимость</legend>
 
                 <input class="filter-form-price-input" type="number" placeholder="от 0" name="min-price">
                 <input class="filter-form-price-input" type="number" placeholder="до 5000" name="max-price">
-              </div>
+              </fieldset>
 
-              <div class="filter-form-color">
+              <fieldset class="filter-form-color">
                 <legend class="filter-form-color-title">Цвет</legend>
                     
                 <input class="filter-form-color-checkbox" type="checkbox" name="color" value="black" checked>
@@ -85,9 +88,9 @@
 
                 <input class="filter-form-color-checkbox" type="checkbox" name="color" value="pink">
                 <label>Розовый</label>
-              </div>
+              </fieldset>
                 
-              <div class="filter-form-bluetooth">
+              <fieldset class="filter-form-bluetooth">
                 <legend class="filter-form-bluetooth-title">Bluetooth</legend>
 
                 <input class="filter-form-bluetooth-radio" type="radio" name="bluetooth" value="yes" checked>
@@ -95,14 +98,14 @@
 
                 <input class="filter-form-bluetooth-radio" type="radio" name="bluetooth" value="no">
                 <label>Нет</label>
-              </div>
+              </fieldset>
 
               <button type="submit">Показать</button>
             </form>
         </section>
 
         <section class="product">
-            <h2>сортировка:</h2>
+            <h2 class="products-title">сортировка:</h2>
             <div class="sort">
               <div>
                 <ul class="sort-list">
@@ -157,14 +160,14 @@
         </section>
       </main>
 
-      <footer>
+      <footer class="page-footer">
         <img class="footer-logo" src="images/footer/logo.svg" width="145" height="36" alt="логотип">
         <a class="footer-address" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
   
         <nav class="footer-navigation">
           <ul class="footer-navigation-list">
             <li class="footer-navigation-item">
-              <a class="footer-navigation-item" href="#">Доставка</a>
+              <a class="footer-navigation-item" href="">Доставка</a>
             </li>
   
             <li class="footer-navigation-item">
@@ -195,6 +198,8 @@
           </ul>
         </nav>
   
-        <a class="footer-link" href="https://htmlacademy.ru"><img class="footer-img" src="" alt="html acedamy"></a>
+        <a class="footer-link" href="https://htmlacademy.ru">
+          <img class="footer-img" src="images/footer/html-academy .svg" width="115" height="33" alt="html acedamy">
+        </a>  
       </footer>
   </body>
