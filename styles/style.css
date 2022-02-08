@@ -57,7 +57,14 @@ body{
 }
 
 .visually-hidden{
-    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .page-header{
@@ -77,7 +84,6 @@ body{
     display: flex;
     width: 1040px;
     align-items: center;
-    justify-content: space-between;
 }
 
 .navigation-item-user:nth-child(2){
@@ -85,8 +91,11 @@ body{
 }
 
 .header-seacrh-form{
+    display: flex;
+    width: 517px;
     font-size: 16px;
     line-height: 20px;
+    margin-right: 52.5px;
 }
 
 .navigation{
@@ -95,6 +104,7 @@ body{
 }
 
 .navigation-user{
+    padding: 0;
     display: flex;
     list-style: none;
     font-size: 18px;
@@ -104,6 +114,7 @@ body{
 .navigation-list{
     padding: 0;
     width: 1040px;
+    flex-wrap: wrap;
     display: flex;
     list-style: none;
     font-family: "raleway";
@@ -118,9 +129,8 @@ body{
     margin-left: auto;
 }
 
-.navigation-item:nth-child(3){
-    margin-left: 47px;
-    margin-right: 51px;
+.navigation-item:not(.navigation-item:first-child, .navigation-item:last-child){
+    margin-right: 49px;
 }
 
 .navigation-item-user:nth-child(3){
@@ -133,6 +143,7 @@ body{
 }
 
 .background-number{
+    display: inline-block;
     color: white;
     font-family: "rubik";
     font-style: normal;
@@ -151,7 +162,8 @@ body{
 
 .slide{
     display: flex;
-    width: 1111px;
+    width: 100%;
+    align-items: flex-end;
 }
 
 .slider-details{
@@ -161,11 +173,14 @@ body{
     letter-spacing: 0.2em;
     color: #000000;
     background: #FFE17F;
+    margin-bottom: 59px;
+    display: inline-block;
 }
 .slider-info{
     font-family: "rubik";
     font-style: normal;
     font-weight: normal;
+    margin: 0 0 38px 0;
 }
 
 .slider-info-title{
@@ -185,13 +200,18 @@ body{
     list-style: none;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
+    width: 1160px;
+    margin-bottom: 70px;
 }
 
 .colaction-icon-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #FFE17F;
     width: 160px;
     height: 160px;
-    margin-right: 40px;
 }
 
 .colaction-icon-block:last-child{
@@ -246,8 +266,10 @@ body{
     display: inline-block;
     color: #FFE17F;
     background: #000000;
-    width: 280px;
-    height: 40px;
+    width: 160px;
+    height: 20px;
+    padding: 9px 120px 11px 0;
+    text-align: center;
 }
 
 .info-navigation-link .opened{
@@ -265,6 +287,9 @@ body{
 
 .dilivery-text {
     width: 448px;
+}
+
+.delivery-flex{
     margin-right: 110px;
 }
 
@@ -276,10 +301,12 @@ body{
 }
 
 .delivery-rare-product-text{
+    padding: 40px 0;
     font-size: 20px;
     line-height: 23px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    text-align: center;
 }
 
 .about-us_contact{
@@ -289,12 +316,12 @@ body{
 }
 
 .about-us-title, .contact-title{
-    margin-bottom: 48px;
+    margin: 40px 0 48px 0;
 }
 
 .about-us-text{
     width: 496px;
-    margin-bottom: 30px;
+    margin:  0 0 30px 0;
 }
 
 .about-us-text:last-child{
@@ -321,6 +348,7 @@ body{
 .about-us-list{
     color: #FFC700;
     padding-left: 26px;
+    margin-bottom: 40px;
 }
 
 .about-us-item{
@@ -331,12 +359,14 @@ body{
 }
 
 .about-us-item:last-child{
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 .contact .contact-shop-name{
     font-weight: bold;
     font-size: 24px;
+    margin:  0 0 15px 0;
+    
 }
 
 .contact{
@@ -345,12 +375,14 @@ body{
 
 .contact-text{
     width: 496px;
+    margin:  0 0 30px 0;
 }
 
 .contact-info{
     font-family: "rubik";
     font-weight: normal;
     color: #444444;
+    margin-bottom: 0 0 30px 0;
 }
 
 .contact .contact-tel{
@@ -397,11 +429,18 @@ body{
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
+    height: 57px;
+    box-sizing: border-box;
+    width: 557px;
+    padding: 11px 0 14px 16px;
 }
 
 .mailings-form-subscribe{
     text-transform: uppercase;
     line-height: 21px;
+    width: 253px;
+    height: 57px;
+    box-sizing: border-box;
 }
 
 .mailings-text{
@@ -427,11 +466,13 @@ body{
 
 .mailings-flex-form{
     display: flex;
+    align-items: center;
 }
 
 .mailings-form{
     width: 810px;
     margin-right: 189.5px;
+    display: flex;
 }
 
 .mailings-title{
@@ -447,6 +488,7 @@ body{
     display: flex;
     flex-direction: column;
     margin-right: 117px;
+    margin-top: 62px;
 }   
 
 .page-footer a{
@@ -468,19 +510,26 @@ body{
 }
 
 .footer-media-navigation-item{
-    width: 35px;
-    height: 35px;
-    border: 5px solid white;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
     border-radius: 100%;
+    margin-right: 15px;
+}
+
+.footer-media-navigation-item:last-child{
+    margin-right: 0;
 }
 
 .footer-navigation-flex{
     margin-right: 190px;
+    margin-top: 137px;
 }
 
 .footer-tel-flex{
     display: flex;
     flex-direction: column;
+    margin-top: 140px;
 }
 
 .page-footer-container{
@@ -493,6 +542,9 @@ body{
     list-style: none;
     width: 444px;
     display: flex;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 62px;
 }
 
 .footer-navigation-item{
@@ -508,6 +560,10 @@ body{
 
 .footer-media-navigation-list{
     display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .page-footer .footer-tel{
@@ -555,6 +611,7 @@ body{
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-weight: 800;
+    margin: 25px 0 72px 0;
 }
 
 .filter-form{
@@ -590,9 +647,13 @@ body{
     text-transform: uppercase;
     letter-spacing: 0.2em;
     font-weight: 800;
+    margin-left: 0;
+
 }
 .sort-list{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .sort-link{
@@ -635,12 +696,16 @@ body{
     color: black;
     text-decoration: none;
     letter-spacing: 0.2em;
+    margin: 0 auto;
 
+}
+
+.product-more-container{
+    display: flex;
+    align-items: center;    
     width: 760px;
     height: 55px;
     border: 3px solid #E5E5E5;
-    margin: 0 auto;
-
     margin-bottom: 44px;
 }
 
@@ -674,7 +739,7 @@ body{
 }
 
 .catalog-title{
-    margin-bottom: 16px;
+    margin: 0 0 16px 0;
 }
 
 .bread-crumbs-link{
@@ -706,6 +771,8 @@ body{
 
 .sort-flex{
     display: flex;
+    align-items: center;
+    margin: 25.5px 0 25.5px 40px;
 }
 
 .products-title{
@@ -714,6 +781,7 @@ body{
 
 .product-flex{
     background-color: white;
+    padding: 70px 40px 78px 40px;
 }
 
 .product-bottom-flex{
@@ -722,18 +790,12 @@ body{
 }
 
 .product-pagination{
+    display: flex;
     width: 760px;
     height: 71px;
     background: #EBEBEB;
     margin: 0 auto;
-}
-
-.product-back{
-    margin-right: 187px;
-}
-
-.product-forward{
-    margin-left: 132px;
+    align-items: center;
 }
 
 .product-page{
@@ -742,4 +804,66 @@ body{
 
 .product-page:last-child{
     margin-right: 0;
+}
+
+.header-seacrh-form-input{
+    width: 359px;
+    height: 40px;
+    box-sizing: border-box;
+    padding-left: 48px;
+}
+
+.header-seacrh-form-button{
+    padding: 0;
+    box-sizing: border-box;
+    width: 160px;
+    height: 40px;
+}
+
+.slide-text-content{
+    margin-left: 40px;
+}
+
+.slide-title{
+    margin: 0 0 29px 0;
+}
+
+.slide-discription{
+    margin: 0 0 61px 0;
+}
+
+.colaction-item{
+    margin-right: 40px;
+}
+
+.colaction-item:nth-child(6n){
+    margin-right: 0;
+}
+
+.catalog-page-header{
+    height: 186px;
+    margin-bottom: 35px;
+}
+
+.filter-form legend{
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+}
+
+.filter-form fieldset{
+    margin-bottom: 47px;
+    border: none;
+}
+
+.filter-form fieldset:last-child{
+    margin-bottom: 0;
+}
+
+.product-pagination-button{
+    display: inline-block;
+    padding: 25px;
+}
+
+.page-number{
+    margin: 0 auto;
 }
