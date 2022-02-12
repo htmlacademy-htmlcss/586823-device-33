@@ -914,3 +914,12 @@ body{
 .account-is-authorized {
     opacity: 0.3;
 }
+
+.navigation-user-authorized-version .account-name:nth-child(1) {
+    margin-right: 28px;
+}
+
+.navigation-user-authorized-version .navigation-item-user:nth-child(3) {
+    margin-left: 47.5px;
+    margin-right: 61px;
+}
