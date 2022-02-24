@@ -1502,6 +1502,14 @@ body{
     border-bottom: 3px solid #C4C4C4;
 }
 
+.mailings-form-input-error {
+    border-color: #FF3D3D;;
+}
+
+.mailings-form-input:disabled {
+    opacity: 0.3;
+}
+
 .mailings-form-subscribe {
     padding: 0;
     background: none;
@@ -2114,13 +2122,16 @@ body{
 }
 
 .filter-form-price-zone {
+    margin-left: 18px;
+    position: relative;
     background-color: black;
     height: 2px;
-    width: 119px;
 }
 
 .filter-form-price-point {
-    position: relative;
+    cursor: pointer;
+    position: absolute;
+    top: -8px;
     display: inline-block;
     width: 18px;
     height: 18px;
@@ -2128,6 +2139,14 @@ body{
     border-radius: 50%;
     box-sizing: border-box;
     border: 2px solid #000000;
+}
+
+.filter-form-price-point-min {
+    left: -18px;
+}
+
+.filter-form-price-point-max {
+    right: -18  px;
 }
 
 .filter-form-price-point-min::before {
@@ -2158,6 +2177,26 @@ body{
     position: absolute;
     bottom: -19px;
     right: -125%;
+}
+
+.filter-form-price-point-min:focus:before, .filter-form-price-point-max:focus:before {
+    border: 2px solid #AF4FFF;
+}
+
+.filter-form-price-point:hover {
+    opacity: 0.5;
+}
+
+.filter-form-price-point:hover {
+    opacity: 0.5;
+}
+
+.filter-form-price-point:active {
+    background: #000000;
+}
+
+.filter-form-price-point:focus {
+    border: 2px solid #AF4FFF;
 }
 
 .filter-form-color-checkbox {
@@ -2238,15 +2277,15 @@ body{
     border: 2px solid #FF3D3D;
 }
 
-.modal-block-form-input-email:hover {
+.modal-block-form-input:hover {
     background-color: #DCDCDC;
 }
 
-.modal-block-form-input-email:focus {
+.modal-block-form-input:focus {
     border: 2px solid #AF4FFF;
 }
 
-.modal-block-form-input-email:disabled {
+.modal-block-form-input:disabled {
     opacity: 0.3;
 }
 
@@ -2276,4 +2315,8 @@ body{
 
 .slider-pagination-slide:focus {
     border: 2px solid #AF4FFF;
+}
+
+.mailings-form-input:focus {
+    background-color: #DCDCDC;
 }
