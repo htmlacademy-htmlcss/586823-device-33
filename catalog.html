@@ -31,8 +31,36 @@
                 <li class="navigation-item-user">
                   <a href="#" class="navigation-link navigation-link-compare">Сравнить</a>
                 </li> 
-                <li class="navigation-item-user">
+                <li class="navigation-item-user navigation-item-basket">
                   <a href="#" class="navigation-link navigation-link-basket">Корзина</a>
+                  <div class="basket">
+                    <div class="products-in-basket">
+                      <div class="product-in-basket">
+                        <a href="#" class="product-in-basket-content">
+                          <img class="product-in-basket-image" src="images/product-in-basket-1.jpg" alt="Селфи-палка." width="39" height="43">
+                          <p class="product-in-basket-text">Любительская селфи-палка</p>
+                        </a>
+                        <button class="product-in-basket-delete"><span class="visually-hidden">Удалить из корзины</span></button>
+                      </div>
+
+                      <div class="product-in-basket">
+                        <a href="#" class="product-in-basket-content">
+                          <img class="product-in-basket-image" src="images/product-in-basket-2.jpg" alt="Селфи-палка." width="39" height="43">
+                          <p class="product-in-basket-text">Профессиональная селфи-палка</p>
+                        </a>
+                        <button class="product-in-basket-delete"><span class="visually-hidden">Удалить из корзины</span></button>
+                      </div>
+                    </div>
+
+                    <div class="basket-info">
+                      <p class="basket-info-text">Товаров: 2</p>
+                      <p class="basket-info-text">Сумма: 2000 ₽</p>
+                    </div>
+
+                    <div class="basket-button-container">
+                      <button class="basket-button">Открыть корзину</button>
+                    </div>
+                  </div>
                 </li>
               </ul>
           </div>
@@ -104,9 +132,11 @@
               <form action="https://echo.htmlacademy.ru/" method="post" class="filter-form">
                   <fieldset class="filter-form-price">
                     <legend class="filter-form-price-title filter-form-title">Стоимость</legend>
-
-                    <input class="filter-form-price-input" type="number" placeholder="от 0" name="min-price">
-                    <input class="filter-form-price-input" type="number" placeholder="до 5000" name="max-price">
+                    <div class="filter-form-price-background">
+                      <div class="filter-form-price-point filter-form-price-point-min"></div>
+                      <div class="filter-form-price-zone"></div>
+                      <div class="filter-form-price-point filter-form-price-point-max"></div>
+                    </div>
                   </fieldset>
 
                   <fieldset class="filter-form-color">
@@ -114,28 +144,28 @@
                     
                     <div class="filter-form-color-container">
                       <div>
-                        <input class="filter-form-color-checkbox" type="checkbox" name="color" value="black" checked>
-                        <label>Черный</label>
+                        <input id="black" class="filter-form-color-checkbox" type="checkbox" name="color" value="black" checked>
+                        <label class="filter-form-color-checkbox-title filter-form-label" for="black">Черный</label>
                       </div>
 
                       <div>
-                        <input class="filter-form-color-checkbox" type="checkbox" name="color" value="white" checked>
-                        <label>Белый</label>
+                        <input id="white" class="filter-form-color-checkbox" type="checkbox" name="color" value="white" checked>
+                        <label class="filter-form-color-checkbox-title filter-form-label" for="white">Белый</label>
                       </div>
 
                       <div>
-                        <input class="filter-form-color-checkbox" type="checkbox" name="color" value="blue">
-                        <label>Синий</label>
+                        <input id="blue" class="filter-form-color-checkbox" type="checkbox" name="color" value="blue">
+                        <label class="filter-form-color-checkbox-title filter-form-label" for="blue">Синий</label>
                       </div>
 
                       <div>
-                        <input class="filter-form-color-checkbox" type="checkbox" name="color" value="red">
-                        <label>Красный</label>
+                        <input id="red" class="filter-form-color-checkbox" type="checkbox" name="color" value="red">
+                        <label class="filter-form-color-checkbox-title filter-form-label" for="red">Красный</label>
                       </div>
 
                       <div>
-                        <input class="filter-form-color-checkbox" type="checkbox" name="color" value="pink">
-                        <label>Розовый</label>
+                        <input id="pink" class="filter-form-color-checkbox" type="checkbox" name="color" value="pink">
+                        <label class="filter-form-color-checkbox-title filter-form-label" for="pink">Розовый</label>
                       </div>
                     </div>
                   </fieldset>
@@ -145,13 +175,13 @@
 
                     <div class="filter-form-bluetooth-container">
                       <div>
-                        <input class="filter-form-bluetooth-radio" type="radio" name="bluetooth" value="yes" checked>
-                        <label>Есть</label>
+                        <input id="bluetooth-yes" class="filter-form-bluetooth-radio" type="radio" name="bluetooth" value="yes" checked>
+                        <label for="bluetooth-yes" class="filter-form-bluetooth-title-radio filter-form-label">Есть</label>
                       </div>
 
                       <div>
-                        <input class="filter-form-bluetooth-radio" type="radio" name="bluetooth" value="no">
-                        <label>Нет</label>
+                        <input id="bluetooth-no" class="filter-form-bluetooth-radio" type="radio" name="bluetooth" value="no">
+                        <label for="bluetooth-no" class="filter-form-bluetooth-title-radio filter-form-label">Нет</label>
                       </div>  
                     </div>
                   </fieldset>
@@ -189,6 +219,7 @@
                         <div class="product-img-wrapper">
                           <img class="product-img" src="images/catalog/product-2.jpg" width="360" height="380" alt="Любительская селфи-палка.">
                           <span class="product-img-text background-line">Подробнее</span>
+                          <span class="product-new"></span>
                         </div>
                         
                         <div class="product-item-text">
@@ -311,7 +342,7 @@
           </div>
 
           <div class="footer-tel-flex">
-            <a class="footer-tel" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <a class="footer-tel" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
 
             <a class="footer-link" href="https://htmlacademy.ru">
               <img class="footer-img" src="images/footer/html-academy.svg" width="115" height="33" alt="html acedamy.">
