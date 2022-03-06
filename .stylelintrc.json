@@ -137,7 +137,7 @@
     ],
     "at-rule-no-vendor-prefix": true,
     "at-rule-semicolon-newline-after": "always",
-    "indentation": 2,
+    "indentation": 4,
     "max-nesting-depth": [
       2,
       {

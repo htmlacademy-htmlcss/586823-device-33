@@ -4,6 +4,7 @@
     <meta charset="utf-8">
 
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="favicon.ico">
 
     <title>HTML Academy: Девайс</title>
   </head>
@@ -26,7 +27,7 @@
                   <a href="#" class="navigation-link navigation-link-account">Коля Петухов</a>
                 </li> 
                 <li class="navigation-item-user account-is-authorized">
-                  <a href="#" class="navigation-link">Войти</a>
+                  <a href="#" class="navigation-link">Выйти</a>
                 </li> 
                 <li class="navigation-item-user">
                   <a href="#" class="navigation-link navigation-link-compare">Сравнить</a>
@@ -135,8 +136,18 @@
                     <div class="filter-form-price-background">
                       
                       <div style="width: 101px;" class="filter-form-price-zone">
-                        <button class="filter-form-price-point filter-form-price-point-min"></button>
-                        <button class="filter-form-price-point filter-form-price-point-max"></button>
+                        <button type="button" class="filter-form-price-point filter-form-price-point-min"></button>
+                        <button type="button" class="filter-form-price-point filter-form-price-point-max"></button>
+                        
+                        <div class="filter-form-price-container">
+                          <label class="filter-form-price-label">
+                          от <input class="filter-form-price-input filter-form-price-input-min" type="number" name="max-price" min="0" value="0">
+                        </label>
+                        <label class="filter-form-price-label">
+                          до <input class="filter-form-price-input filter-form-price-input-max" type="number" name="max-price" value="5000" min="0">
+                        </label>
+                        </div>
+                        
                       </div>
                       
                     </div>
@@ -201,11 +212,11 @@
             <div class="sort-flex">
               <h3 class="products-title">сортировка:</h3>
                 <div class="sort">
-                    <ul class="sort-list">
-                      <li class="sort-item">
-                        <a href="#" class="sort-link">Популярные</a>
-                      </li>
-                    </ul>
+                    <select class="sort-list">
+                      <option class="sort-item" value="sort-item">Популярные</option>
+                      <option class="sort-item" value="sort-item">Популярные</option>
+                      <option class="sort-item" value="sort-item  ">Популярные</option>
+                    </select>
 
                   <div class="sort-button-flex">
                     <a class="sort-up sort-button" href="#"><span class="visually-hidden">Сортировка по возрастанию</span></a>
@@ -330,7 +341,7 @@
             <nav class="footer-media-navigation">
               <ul class="footer-media-navigation-list">
                 <li class="footer-media-navigation-item">
-                  <a class="footer-media-navigation-link Facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Facebook</span></a>
+                  <a class="footer-media-navigation-link facebook" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Facebook</span></a>
                 </li>
   
                 <li class="footer-media-navigation-item">
