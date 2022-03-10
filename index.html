@@ -16,8 +16,8 @@
 
           <div class="top-menu">
               <form class="header-seacrh-form" action="https://echo.htmlacademy.ru/." method="post">
-                <label class="visually-hidden">Поиск по сайту</label>
-                <input class="header-seacrh-form-input" type="search" name="search-info" placeholder="Текст поиска">
+                <label class="visually-hidden" for="site-search">Поиск по сайту</label>
+                <input class="header-seacrh-form-input" id="site-search" type="search" name="search-info" placeholder="Текст поиска">
                 <button class="header-seacrh-form-button" type="submit">Найти</button>
               </form>
 
@@ -387,22 +387,22 @@
                   <label class="visually-hidden">Форма оформления заказа</label>
                   <div class="modal-block-form-row">
                     <div class="modal-block-form-name modal-block-form-flex">
-                      <label class="modal-block-form-title">Ваше имя:</label>
-                      <input class="modal-block-form-input modal-block-form-input-name modal-block-form-place" name="name" type="text" placeholder="Введите имя">
+                      <label class="modal-block-form-title" for="modal-block-form-input-name">Ваше имя:</label>
+                      <input class="modal-block-form-input modal-block-form-input-name modal-block-form-place" id="modal-block-form-input-name" name="name" type="text" placeholder="Введите имя">
                       <span class="modal-block-form-text modal-block-form-text-name">Добавьте имя</span>
                     </div>
                     
                     <div class="modal-block-form-email modal-block-form-flex">
-                      <label class="modal-block-form-title">Ваш e-mail:</label>
-                      <input class="modal-block-form-input modal-block-form-input-email modal-block-form-input-email-error modal-block-form-place" name="email" type="email" placeholder="почта">
+                      <label class="modal-block-form-title" for="modal-block-form-input-email">Ваш e-mail:</label>
+                      <input class="modal-block-form-input modal-block-form-input-email modal-block-form-input-email-error modal-block-form-place" id="modal-block-form-input-email" name="email" type="email" placeholder="почта">
                       <span class="modal-block-form-text modal-block-form-text-email">Забавный у вас адрес</span>
                     </div>
                   </div>
                   
                   <div class="modal-block-form-row">
                     <div class="modal-block-form-textarea modal-block-form-flex">
-                      <label class="modal-block-form-title">Что нужно привезти:</label>
-                      <textarea class="modal-block-form-input modal-block-form-place" name="more-info" placeholder="В свободной форме"></textarea>
+                      <label class="modal-block-form-title" for="modal-block-form-more-info">Что нужно привезти:</label>
+                      <textarea class="modal-block-form-input modal-block-form-place" id="modal-block-form-more-info" name="more-info" placeholder="В свободной форме"></textarea>
                     </div>
 
                     <div class="modal-block-form-count">
@@ -415,7 +415,8 @@
                       </label>
                       <span class="modal-block-form-input-container modal-block-form-input-container-error">
                         <button type="button" class="modal-block-form-count-button modal-block-form-count-button-minus"><span class="visually-hidden">Уменьшить количество товара</span></button>
-                        <input class="modal-block-form-input-count modal-block-form-place" name="count" type="number" min="1" value="1">
+                        <label id="modal-block-form-input-count" class="visually-hidden">Количество товара</label>
+                        <input for="modal-block-form-input-count" class="modal-block-form-input-count modal-block-form-place" name="count" type="number" min="1" value="1">
                         <button type="button" class="modal-block-form-count-button modal-block-form-count-button-plus"><span class="visually-hidden">Увеличить количество товара</span></button>
                       </span>
                       
@@ -483,8 +484,8 @@
           
           <div class="mailings-flex-form">
             <form action="https://echo.htmlacademy.ru/" class="mailings-form" method="post">
-              <label class="visually-hidden">Подписка на рассылку</label>
-              <input class="mailings-form-input mailings-form-input-error" name="email" type="email" placeholder="Ваш e-mail">
+              <label class="visually-hidden" for="mailings-form-input">Подписка на рассылку</label>
+              <input class="mailings-form-input mailings-form-input-error" id="mailings-form-input" name="email" type="email" placeholder="Ваш e-mail">
               <button class="mailings-form-subscribe" type="submit">Подписаться</button>
             </form>
 
