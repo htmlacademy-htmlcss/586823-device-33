@@ -18,7 +18,8 @@
 
           <div class="top-menu">
               <form class="header-seacrh-form" action="https://echo.htmlacademy.ru/." method="post">
-                <input class="header-seacrh-form-input" type="search" placeholder="Текст поиска">
+                <label class="visually-hidden" for="site-search">Поиск по сайту</label>
+                <input class="header-seacrh-form-input" id="site-search" type="search" name="search-info" placeholder="Текст поиска">
                 <button class="header-seacrh-form-button" type="submit">Найти</button>
               </form>
               
@@ -68,7 +69,7 @@
           
           <ul class="navigation-list">
             <li class="navigation-item navigation-item-catalog">
-              <button class="navigation-link navigation-link-catalog">Каталог товаров</button>
+              <a href="#" class="navigation-link navigation-link-catalog">Каталог товаров</a>
               <div class="catalog-menu">
                 <ul class="catalog-menu-list">
                   <li class="catalog-menu-item">
@@ -131,6 +132,7 @@
               <h2 class="filter-title">фильтр:</h2>
 
               <form action="https://echo.htmlacademy.ru/" method="post" class="filter-form">
+                  <label class="visually-hidden">Фильтр</label>
                   <fieldset class="filter-form-price">
                     <legend class="filter-form-price-title filter-form-title">Стоимость</legend>
                     <div class="filter-form-price-background">
@@ -215,7 +217,7 @@
                     <select class="sort-list">
                       <option class="sort-item" value="sort-item">Популярные</option>
                       <option class="sort-item" value="sort-item">Популярные</option>
-                      <option class="sort-item" value="sort-item  ">Популярные</option>
+                      <option class="sort-item" value="sort-item">Популярные</option>
                     </select>
 
                   <div class="sort-button-flex">
