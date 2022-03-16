@@ -84,7 +84,7 @@ body {
   width: 1160px;
   margin: 0 auto;
   padding-bottom: 23px;
-  background: linear-gradient(to bottom, white 0 23px, #ffe17f 23px 100%);
+  background: linear-gradient(to bottom, white 0 40px, #ffe17f 40px 100%);
 }
 
 .page-header a {
@@ -96,7 +96,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 30px 0 30px 0;
+  margin: 20px 0 30px 0;
 }
 
 .navigation-item-user:nth-child(1) {
@@ -194,7 +194,7 @@ body {
   display: flex;
   align-items: flex-start;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 55px;
 }
 
 .slider-details {
@@ -208,7 +208,7 @@ body {
 }
 
 .slider {
-  margin-bottom: 70px;
+  margin-bottom: 108px;
 }
 
 .slider-info {
@@ -422,6 +422,7 @@ body {
 }
 
 .about-us_contact {
+  position: relative;
   display: flex;
   width: 1160px;
   margin-bottom: 70px;
@@ -455,6 +456,7 @@ body {
 
 .about-us-link,
 .contact-link {
+  text-transform: uppercase;
   letter-spacing: 0.2em;
 }
 
@@ -959,10 +961,11 @@ body {
 
 .slide-text-content {
   margin-left: 40px;
+  width: 560px;
 }
 
 .slide-title {
-  width: max-content;
+  padding-top: 25px;
   margin: 0 0 29px 0;
 }
 
@@ -1059,7 +1062,7 @@ body {
 
 .slide-container::before {
   content: "";
-  height: 134px;
+  height: 115px;
   width: 100%;
   top: 0;
   position: absolute;
@@ -1078,7 +1081,7 @@ body {
 }
 
 .facebook {
-  background: url('../images/footer/fb.svg');
+  background: url('../images/footer/facebook.svg');
 }
 
 .instagram {
@@ -1154,6 +1157,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.2em;
+  padding: 15px 0;
 }
 
 .navigation-item-catalog:hover .catalog-menu {
@@ -1194,11 +1198,11 @@ body {
 }
 
 .facebook:hover {
-  background: url('../images/footer/fb-hover.svg');
+  background: url('../images/footer/facebook-hover.svg');
 }
 
 .facebook:active {
-  background: url('../images/footer/fb-active.svg');
+  background: url('../images/footer/facebook-active.svg');
 }
 
 .facebook:focus {
@@ -1445,7 +1449,7 @@ body {
   height: 12px;
   top: 23%;
   left: -23px;
-  background: url('../images/header/compare.svg');
+  background: url('../images/header/compare-icon.svg');
 }
 
 .navigation-link-basket::before {
@@ -1484,11 +1488,16 @@ body {
   height: 40px;
   box-sizing: border-box;
   padding-left: 48px;
+  font-family: "rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .header-search-form-input::placeholder {
   color: black;
-  font-family: "rubik"sans-serif;
+  font-family: "rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1533,7 +1542,7 @@ body {
 }
 
 .about-us_contact .background-line::before {
-  top: 40%;
+  top: 30%;
 }
 
 .info-navigation-item,
@@ -1569,7 +1578,6 @@ body {
 
 .mailings-form-input-error {
   border-color: #FF3D3D;
-  ;
 }
 
 .mailings-form-input:disabled {
@@ -1833,10 +1841,6 @@ body {
   display: block;
 }
 
-.header-search-form-input {
-  color: #000000;
-}
-
 .header-search-form-input:focus {
   outline: 2px solid #AF4FFF;
 }
@@ -2056,6 +2060,14 @@ body {
 .modal-block-form-input-email-error {
   border: 2px solid #FF3D3D;
   box-sizing: border-box;
+}
+
+.modal-block-form-input {
+  font-family: "rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .modal-block-form-input[type="email"]::placeholder {
@@ -2363,7 +2375,7 @@ body {
   left: -36px;
 }
 
-.filter-form-color-checkbox:checked+.filter-form-color-checkbox-title::before {
+.filter-form-color-checkbox:checked + .filter-form-color-checkbox-title::before {
   border: none;
   background-image: url('../images/checkbox.svg');
 }
@@ -2481,4 +2493,26 @@ body {
 
 .filter-form .filter-form-price {
   padding-bottom: 22px;
+}
+
+.filter-form-color-checkbox:focus + .filter-form-color-checkbox-title::before {
+  outline: 2px solid #AF4FFF;
+}
+
+.header-logo {
+  padding-top: 17px;
+}
+
+.collection-discription {
+  margin: 0;
+  margin-top: 33px;
+}
+
+.contact-title::before, .about-us-title::before {
+  content: "";
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
 }
