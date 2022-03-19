@@ -36,8 +36,8 @@
               <li class="navigation-item-user">
                 <a href="#" class="navigation-link navigation-link-compare">Сравнить</a>
               </li>
-              <li class="navigation-item-user navigation-item-basket">
-                <a href="#" class="navigation-link navigation-link-basket">
+              <li class="navigation-item-user navigation-item-basket navigation-item-basket-catalog">
+                <a href="#" class="navigation-link navigation-link-basket navigation-link-basket-catalog">
                   <span class="navigation-link-basket-count">2</span>
                   Корзина
                 </a>
@@ -171,29 +171,29 @@
                 <legend class="filter-form-color-title filter-form-title">Цвет</legend>
 
                 <div>
-                  <div>
+                  <div class="filter-form-color-wrapper">
                     <input id="black" class="filter-form-color-checkbox" type="checkbox" name="color" value="black"
                       checked>
                     <label class="filter-form-color-checkbox-title filter-form-label" for="black">Черный</label>
                   </div>
 
-                  <div>
+                  <div class="filter-form-color-wrapper">
                     <input id="white" class="filter-form-color-checkbox" type="checkbox" name="color" value="white"
                       checked>
                     <label class="filter-form-color-checkbox-title filter-form-label" for="white">Белый</label>
                   </div>
 
-                  <div>
+                  <div class="filter-form-color-wrapper">
                     <input id="blue" class="filter-form-color-checkbox" type="checkbox" name="color" value="blue">
                     <label class="filter-form-color-checkbox-title filter-form-label" for="blue">Синий</label>
                   </div>
 
-                  <div>
+                  <div class="filter-form-color-wrapper">
                     <input id="red" class="filter-form-color-checkbox" type="checkbox" name="color" value="red">
                     <label class="filter-form-color-checkbox-title filter-form-label" for="red">Красный</label>
                   </div>
 
-                  <div>
+                  <div class="filter-form-color-wrapper">
                     <input id="pink" class="filter-form-color-checkbox" type="checkbox" name="color" value="pink">
                     <label class="filter-form-color-checkbox-title filter-form-label" for="pink">Розовый</label>
                   </div>
@@ -204,13 +204,13 @@
                 <legend class="filter-form-bluetooth-title filter-form-title">Bluetooth</legend>
 
                 <div class="filter-form-bluetooth-container">
-                  <div>
+                  <div class="filter-form-bluetooth-wrapper">
                     <input id="bluetooth-yes" class="filter-form-bluetooth-radio" type="radio" name="bluetooth"
                       value="yes" checked>
                     <label for="bluetooth-yes" class="filter-form-bluetooth-title-radio filter-form-label">Есть</label>
                   </div>
 
-                  <div>
+                  <div class="filter-form-bluetooth-wrapper">
                     <input id="bluetooth-no" class="filter-form-bluetooth-radio" type="radio" name="bluetooth"
                       value="no">
                     <label for="bluetooth-no" class="filter-form-bluetooth-title-radio filter-form-label">Нет</label>
@@ -338,8 +338,8 @@
     <footer class="page-footer">
       <div class="page-footer-container">
         <div class="logo-address-flex">
-          <a href="index.html">
-            <img class="footer-logo" src="images/footer/logo.svg" width="145" height="36" alt="логотип.">
+          <a class="footer-logo-link" href="index.html">
+            <img class="footer-logo footer-logo-catalog" src="images/footer/logo.svg" width="145" height="36" alt="логотип.">
           </a>
 
           <a class="footer-address" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
